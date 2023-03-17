@@ -144,9 +144,9 @@ const renderNoteList = async (notes) => {
         'fa-trash-alt',
         'float-right',
         'text-danger',
-        'delete-note'
+        'delete-note',
       );
-      delBtnEl.addEventListener('click', handleNoteDelete);
+   
 
       liEl.append(delBtnEl);
     }
@@ -180,4 +180,4 @@ if (window.location.pathname === '/notes') {
   noteText.addEventListener('keyup', handleRenderSaveBtn);
 }
 
-// getAndRenderNotes();
+getAndRenderNotes();
